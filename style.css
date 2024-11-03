@@ -278,45 +278,9 @@ transition: .5s ease;
       font-size:2.5rem;
       margin: 2rem 0 3rem;
 }
-.Experience h2{
-      margin-bottom: 5rem;
-}
-.Experience-Container{
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-      flex-wrap: wrap;
-      gap:2rem;
-}
-.Experience-Containe,.Experience-box
-{
-      flex: 1 1 30rem;
-      float: right;
-      background: var(--snd-bg-color);
-      padding: 3rem 2 rem 4 rem;
-      border-radius: 2rem;
-      text-align: center ;
-      border: .2rem solid var(--bg-color);
-      transition: .5s ease;
-}
-.Experience-Containe,.Experience-box:hover{
-      border-color:var(--main-color);
-      transform: scale(1.02);
-}
-.Experience-box i{
-      font-size :3rem;
-     color: var(--main-color) ;
-}
-.Experience-box h3{
-      font-size:2.6rem;
-      margin:5% 5% 5% 5%;
-}
-.Experience-box p
-{
-font-size: 1.6rem;
-margin:1rem 0 3rem;
-}
+
+
+
     ul {
             list-style-type: none;
             padding: 0;
@@ -341,18 +305,9 @@ margin:1rem 0 3rem;
             border-left: 4px solid #007BFF;
             padding: 5px;
             border-radius: 3px;
-        }
+        }    
 
-        .experience-details {
-            padding: 5px;
-            margin-top: 5px;
-            border: 1px solid #ddd;
-            border-radius: 10px;
-        }
-
-        #experience-Web ,.experience-Mobile{
-            margin-top: 10px;
-        }
+  
 .contact h2{
       margin-bottom:3rem;
 }
@@ -418,11 +373,7 @@ box-shadow: 0 0 1rem var(--main-color);
       font-size: 1.1rem;
       color:var(--snd-bg-color)
 }
-.Job-title
-{
-      text-align: center;
-      color:var(--main-color)
-}
+
 /* BREAKPOINTS */
 @media (max-width: px1200)
 {
