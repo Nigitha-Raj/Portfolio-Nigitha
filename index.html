@@ -20,7 +20,7 @@
             <nav class="navbar">        
               <i class="fa-solid fa-bars" id="menu-icon"></i>   
                        
-                  <a class="active" href="#home" >Home</a>
+                  <a class="nav-link active" href="#home" >Home</a>
                   <a class="nav-link" href="#Skills">Skills</a>
                   <a class="nav-link" href="#Education">Education</a>                  
                   <a class="nav-link" href="#Experience">Experience</a>
@@ -43,7 +43,7 @@
                         <a href="mailto:nigitha1797@gmail.com" target="_blank"> <i class="fa-regular fa-envelope"></i></a>             
                                                
                   </div>
-                  <a href="NIGITHA_Resume.docx" download="NIGITHA_Resume.docx" class="btn">Download Resume</a>
+                  <a href="resources\Nigitha_Resume.pdf" download="resources\Nigitha_Resume.pdf" class="btn">Download Resume</a>
             </div>
 <div class="home-img">
       <img src="resources/profiledp.png">
@@ -325,15 +325,25 @@
             <h2 class="heading">Contact <span>Me</span></h2>
                  <form action="#">
                   <div class="input-box">
-                        <input type="text" placeholder="Full Name">    
-                        <input type="email"  placeholder="Email Address">               
+                        <input type="text" required  placeholder="Full Name">    
+                        <input type="email"   required placeholder="Email Address">               
                   </div>                  
                   <div class="input-box">
-                        <input type="number" placeholder="Mobile Number">
-                        <inuput type="text" placeholder="Email Subject">                        
+                        <input type="number"  required placeholder="Mobile Number">
+                        <input type="text" required  placeholder="Email Subject">  
+                                         
                   </div>
                   <textarea class="" id="" col="30" rows="5" placeholder="Your Message"></textarea>
-                  <input type="submit" value="Send Message" class="btn">
+                  <div>
+                        <a
+                          href=" mailto:nigitha1797@gmail.com?subject=Testing out mailto! &body=This is only a test!"
+                          class="button button--flex"
+                        >
+                          Send Message
+                          <i class="uil uil-message button__icon"></i>
+                        </a>
+                      </div>
+                  <input type="submit" value="Send Message"  onclick="sendMail()"  class="btn">
                  </form>
          </section>
           <!--FOOTER SECTION -->
@@ -347,7 +357,22 @@
                   </a>
             </div>
           </footer>
-          <script> 
+          <script>
+          
+          function sendMail() {
+    window.location.href = "mailto:nigitha1797@gmail.com?subject=Testing out mailto!&body=This is only a test!";
+  }
+          const navLinks = document.querySelectorAll('.nav-link');
+ 
+ // Add click event listeners to each link
+ navLinks.forEach(link => {
+     link.addEventListener('click', function() {
+         // Remove "active" class from all links
+         navLinks.forEach(link => link.classList.remove('active'));
+         // Add "active" class to the clicked link
+         this.classList.add('active');
+     });
+ });
           let menuIcon= document.querySelector('#menu-icon');
 let navbar=  document.querySelector('.navbar');
         
